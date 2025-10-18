@@ -4,6 +4,9 @@ This is a simple Node.js API, it is a get request response which returns basic i
 
 ## Features
 
+- Create a GET endpoint at: /me
+- The endpoint must return JSON data with Content-Type: application/json
+- Must integrate with the Cat Facts API to fetch dynamic cat facts
 - Responds to GET requests with the current date and time in UTC.
 - Provides a fast response time (<500ms).
 - Includes metadata like the developer's email and GitHub URL.
@@ -12,12 +15,12 @@ This is a simple Node.js API, it is a get request response which returns basic i
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/Uthmanduro/hng_2025_S1.git
+   git clone https://github.com/Uthmanduro/hng_13_S1.git
    ```
 2. Navigate to the project repository
 
    ```bash
-   cd hng_2025_S1
+   cd hng_13_S1
 
    ```
 
@@ -27,7 +30,7 @@ This is a simple Node.js API, it is a get request response which returns basic i
    ```
 4. start the server
    ```bash
-    npm run devv
+    npm run dev
    ```
 5. access the api locally with:
    ` http://localhost:8000`
@@ -36,15 +39,20 @@ This is a simple Node.js API, it is a get request response which returns basic i
 
 Endpoint:
 
-`GET /`
+`GET /me`
 
 ## Response:
 
 ```json
 {
-  "email": "udurosinlohun@gmail.com",
-  "current_datetime": "2025-01-30T21:27:35.959Z",
-  "github_url": "https://github.com/Uthmanduro/hng_2025_S1"
+  "status": "success",
+  "user": {
+    "email": "<your email>",
+    "name": "<your full name>",
+    "stack": "<your backend stack>"
+  },
+  "timestamp": "<current UTC time in ISO 8601 format>",
+  "fact": "<random cat fact from Cat Facts API>"
 }
 ```
 
