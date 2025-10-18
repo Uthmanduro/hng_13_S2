@@ -65,7 +65,7 @@ Endpoint:
 ## Example Usage
 
 ```text
-curl https://hng-2025-s1.vercel.app/
+curl https://hng13s1.pxxl.click/me
 ```
 
 ## Backlinks
@@ -76,4 +76,4 @@ curl https://hng-2025-s1.vercel.app/
 
 The API has been deployed to a publicly accessible endpoint:
 
-https://hng-2025-s1.vercel.app/
+https://hng13s1.pxxl.click/me
