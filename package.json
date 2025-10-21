@@ -1,5 +1,5 @@
 {
-  "name": "hng_2025_s1",
+  "name": "hng_2025_s2",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,9 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@prisma/client": "^6.17.1",
+    "prisma": "^6.17.1"
+  }
 }
